@@ -12,5 +12,21 @@ export default function Header({ name }) {
         </Link>
       </p>
     </header>
+
   );
+
+<body>
+  
+  <script src="https://unpkg.com/blip-chat-widget@1.6.*" type="text/javascript"></script>
+<script>
+    (function () {
+        window.onload = function () {
+            new BlipChat()
+            .withAppKey('YOUR-APP-KEY')
+            .withButton({"color":"#2CC3D6"})
+            .build();
+        }
+    })();
+</script>
+</body>
 }
