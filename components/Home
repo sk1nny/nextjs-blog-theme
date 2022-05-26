@@ -3,17 +3,20 @@ import Script from 'next/script'
 function Home() {
   return (
     <div class="container">
-     <script src="https://unpkg.com/blip-chat-widget@1.6.*" type="text/javascript"></script>
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+</script>
 <script>
     (function () {
         window.onload = function () {
             new BlipChat()
-            .withAppKey('YOUR-APP-KEY')
-            .withButton({"color":"#2CC3D6"})
+            .withAppKey('dHJhdGF0aXZhc29maWNpYWwxeDI4bWVxbHNuazY6ZjVlYzNjZTMtYzExMC00Njk1LTliYzAtZDRjZThjZWVmYzY0')
+            .withButton({"color":"#2CC3D5","icon":""})
+            .withCustomCommonUrl('https://yago-luiz-hillesheim-81lzw.chat.blip.ai/')
             .build();
         }
     })();
 </script>
+                                
       <div>Home Page</div>
     </div>
   )
