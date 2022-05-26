@@ -1,12 +1,9 @@
 import Script from 'next/script'
 
-function Home() {
-  return (
-    <div class="container">
 <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
 </script>
 <script>
-    (function () {
+    (function Home () {
         window.onload = function () {
             new BlipChat()
             .withAppKey('dHJhdGF0aXZhc29maWNpYWwxeDI4bWVxbHNuazY6ZjVlYzNjZTMtYzExMC00Njk1LTliYzAtZDRjZThjZWVmYzY0')
@@ -16,6 +13,7 @@ function Home() {
         }
     })();
 </script>
+                                
                                 
       <div>Home Page</div>
     </div>
