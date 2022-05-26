@@ -18,19 +18,15 @@ export default function Index({ posts, globalData }) {
         <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
         </h1>
-<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
-</script>
-<script>
-    (function () {
-        window.onload = function () {
-            new BlipChat()
-            .withAppKey('dHJhdGF0aXZhc29maWNpYWwxeDI4bWVxbHNuazY6ZjVlYzNjZTMtYzExMC00Njk1LTliYzAtZDRjZThjZWVmYzY0')
-            .withButton({"color":"#2CC3D5","icon":""})
-            .withCustomCommonUrl('https://yago-luiz-hillesheim-81lzw.chat.blip.ai/')
-            .build();
-        }
-    })();
-</script>
+
+function Home() {
+  return (
+    <div class="container">
+      <Script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></Script>
+      <div>Home Page</div>
+    </div>
+  )
+}
                                 
         <ul className="w-full">
           {posts.map((post) => (
